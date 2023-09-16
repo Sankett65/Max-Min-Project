@@ -7,18 +7,19 @@ public class Max_Min {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter First Number: ");
-        int x = sc.nextInt();
+        String x= sc.nextLine().toLowerCase();
         System.out.print("Enter Second Number: ");
-        int y = sc.nextInt();
+        String y= sc.nextLine().toLowerCase();
         System.out.print("Enter Third Number: ");
-        int z = sc.nextInt();
+        String z= sc.nextLine().toLowerCase();
 
-        if (x>y && x>z){
-            System.out.println("NUmber "+x+" is Max");
-        } else if (y>x && y>z) {
-            System.out.println("Number "+y+" is Max");
+        if (x.length()>y.length() && x.length()>z.length()){
+            System.out.println("String "+x+" is Max");
+        }else if (y.length()>x.length() && y.length()>z.length()){
+            System.out.println("String "+y+" is Max");
         }else {
-            System.out.println("Number "+z+" is Max");
+            System.out.println("String "+z+" is Max");
         }
+
     }
 }
